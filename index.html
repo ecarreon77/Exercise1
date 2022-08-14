@@ -1,0 +1,48 @@
+  <body>
+    <form>
+      <div>
+        <h3>Form Directory</h3>
+        <label>City Name: </label>
+        <input type="text" id="city_Name" />
+        <br /><br />
+      </div>
+      <div>
+        <label>Country: </label>
+        <input type="text" id="country_Name" />
+        <br /><br />
+      </div>
+      <div>
+        <label>Population: </label>
+        <input type="number" id="population_Cnt" />
+        <br /><br />
+      </div>
+    </form>
+    <div>
+      <button id="submitBtn">Submit</button>
+      <button
+        onclick="addData(
+            [document.getElementById('city').value,
+            document.getElementById('country').value,
+            document.getElementById('population').value])">
+      
+        Save
+      </button>
+    </div>
+
+    <div>
+      <h3>Search</h3>
+    </div>
+    <div id="myList"></div>
+
+    <form><input type="text" id="searchText" /></form>
+    <button id="searchBtn">Search</button>
+    <br>
+    <h3>My List</h3>
+    <div id="searchResult"></div>
+
+    <script>
+      var exports = { __esModule: true };
+    </script>
+    <script src="./index.js"></script>
+  </body>
+</html>
